@@ -4,8 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 // Models
 const Journal = require('./Models/journal');
-
-const port = process.env.PORT;
+const port = process.env.PORT || 8888;
 const mongoUri = process.env.URI;
 const server = express();
 
